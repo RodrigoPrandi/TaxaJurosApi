@@ -27,6 +27,6 @@ Executar imagem gerada local:
 docker run --publish 44344:80 --detach --name taxajurosapi taxajurosapi:local
 ```
 
-Apos a execução poderá ser acessado o seguinte endpoint:
+Após a execução poderá ser acessado o seguinte endpoint:
 
 http://localhost:44344/taxajuros
