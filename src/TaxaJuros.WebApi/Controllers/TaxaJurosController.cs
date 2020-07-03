@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using TaxaJuros.WebApi.Extensions;
 
 namespace TaxaJuros.WebApi.Controllers
 {
@@ -19,9 +20,9 @@ namespace TaxaJuros.WebApi.Controllers
         }
 
         [HttpGet]
-        public decimal Get()
+        public string Get()
         {
-            return 0.01M;
+            return 0.01d.FormatStringBr();
         }
     }
 }
